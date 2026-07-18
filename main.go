@@ -14,7 +14,7 @@ import (
 
 	"golang.design/x/clipboard"
 
-	"github.com/acksell/coolname/internal/qr"
+	"github.com/acksell/qr/internal/qr"
 )
 
 const usage = `qr — encode and decode QR codes

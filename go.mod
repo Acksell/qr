@@ -1,4 +1,4 @@
-module github.com/acksell/coolname
+module github.com/acksell/qr
 
 go 1.25.0
 
