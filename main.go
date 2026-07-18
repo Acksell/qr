@@ -66,7 +66,7 @@ func runClipboard() error {
 		if err != nil {
 			return err
 		}
-		fmt.Println(res.Text)
+		printDecoded(res)
 		return nil
 	}
 
@@ -192,8 +192,14 @@ func runDecode(args []string) error {
 		enc.SetIndent("", "  ")
 		return enc.Encode(res)
 	}
-	fmt.Println(res.Text)
+	printDecoded(res)
 	return nil
+}
+
+// printDecoded reports a successful decode, making it unambiguous (versus a
+// blank or unusual result) that a QR code was actually found.
+func printDecoded(res *qr.Result) {
+	fmt.Printf("\033[32m✓\033[0m qr code says: %s\n", res.Text)
 }
 
 // openImage decodes an image from a file path, or from stdin when path is "-".
