@@ -8,7 +8,7 @@ QR codes back out of images.
   (a Go port of ZXing), which reads real-world photos — rotated, skewed, or
   low-contrast codes included.
 
-![qr with "hello" on the clipboard, printing the text and rendering it as a QR code](docs/demo.png)
+<img src="docs/demo.png" alt='qr with "hello" on the clipboard, printing the text and rendering it as a QR code' width="380">
 
 Try it yourself: copy the QR code image above, then run `qr` — it'll decode
 it right back to `hello`.
