@@ -11,7 +11,9 @@ QR codes back out of images.
 <img src="docs/demo.png" alt='qr with "hello" on the clipboard, printing the text and rendering it as a QR code' width="380">
 
 Try it yourself: copy the QR code image above, then run `qr` — it'll decode
-it right back to `hello`.
+it right back to `hello`:
+
+<img src="docs/demo-decode.png" alt='qr decoding the pasted image back to "hello"' width="380">
 
 ## Install
 
