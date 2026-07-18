@@ -199,7 +199,7 @@ func runDecode(args []string) error {
 // printDecoded reports a successful decode, making it unambiguous (versus a
 // blank or unusual result) that a QR code was actually found.
 func printDecoded(res *qr.Result) {
-	fmt.Printf("\033[32m✓\033[0m qr code says: %s\n", res.Text)
+	fmt.Printf("\033[32m✓ QR code decoded\033[0m\nqr code says: %s\n", res.Text)
 }
 
 // openImage decodes an image from a file path, or from stdin when path is "-".
