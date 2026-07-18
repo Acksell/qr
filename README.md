@@ -8,14 +8,22 @@ QR codes back out of images.
   (a Go port of ZXing), which reads real-world photos — rotated, skewed, or
   low-contrast codes included.
 
-## Install / build
+![qr with "hello" on the clipboard, printing the text and rendering it as a QR code](docs/demo.png)
+
+Try it yourself: copy the QR code image above, then run `qr` — it'll decode
+it right back to `hello`.
+
+## Install
+
+```sh
+go install github.com/acksell/qr@latest
+```
+
+Or build from a local checkout:
 
 ```sh
 go build -o qr .
 ```
-
-This produces a `qr` binary in the current directory. (`go install .` puts it on
-your `$PATH`.)
 
 ## Usage
 
