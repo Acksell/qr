@@ -24,7 +24,7 @@ go install github.com/acksell/qr@latest
 Or build from a local checkout:
 
 ```sh
-go build -o qr .
+make
 ```
 
 ## Usage
